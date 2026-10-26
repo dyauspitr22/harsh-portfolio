@@ -1,0 +1,1327 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <!-- Primary Meta Tags -->
+  <title>Harsh Kumar Mishra | AI & ML Engineer | Portfolio</title>
+  <meta name="title" content="Harsh Kumar Mishra | AI & ML Engineer | Portfolio" />
+  <meta name="description" content="Portfolio of Harsh Kumar Mishra - AI & Machine Learning Engineer specializing in LangChain ReAct Agents, RAG Pipelines, Computer Vision OCR, and Mathematical Predictive Modeling." />
+  <meta name="keywords" content="Harsh Kumar Mishra, AI Engineer, ML Engineer, LangChain, ReAct Agents, RAG, Computer Vision, OpenCV, PyTesseract, SVNIT Surat, Mathematics, Machine Learning Portfolio" />
+  <meta name="author" content="Harsh Kumar Mishra" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://harsh-kumar-mishra.github.io/harsh-portfolio/" />
+  <meta property="og:title" content="Harsh Kumar Mishra | AI & ML Engineer" />
+  <meta property="og:description" content="AI & Machine Learning Engineer specializing in LangChain Agents, Multimodal OCR Pipelines, and Predictive Analytics." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%230f172a'/><path d='M30 30L30 70M70 30L70 70M30 50L70 50' stroke='%2338bdf8' stroke-width='10' stroke-linecap='round'/></svg>" />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Background Glow & Interactive Canvas -->
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+  <canvas id="bg-canvas" class="bg-canvas"></canvas>
+
+  <!-- Navigation Bar -->
+  <header class="navbar-wrapper">
+    <nav class="navbar container" id="navbar">
+      <a href="#hero" class="brand-logo" aria-label="Harsh Kumar Mishra Home">
+        <span class="logo-box">HKM</span>
+        <span class="logo-text">Harsh <span class="accent-text">Mishra</span></span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <div class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#agent-demo" class="nav-link special-link"><span class="pulse-dot"></span>Interactive Agent</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Nav Actions -->
+      <div class="nav-actions">
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Theme" title="Toggle Dark/Light Mode">
+          <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+          <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        </button>
+
+        <a href="assets/Harsh_Kumar_Mishra_Resume.pdf" target="_blank" download="Harsh_Kumar_Mishra_Resume.pdf" class="btn btn-outline btn-sm btn-resume">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          <span>Resume</span>
+        </a>
+
+        <button class="hamburger" id="hamburger" aria-label="Toggle Navigation Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content Container -->
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <!-- Availability Badge -->
+          <div class="status-badge">
+            <span class="status-indicator"></span>
+            <span>Available for AI / ML Engineering Roles</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Harsh Kumar Mishra</span>
+          </h1>
+
+          <div class="hero-subtitle-wrapper">
+            <span class="hero-role-prefix">I engineer </span>
+            <span class="dynamic-typewriter" id="typewriter"></span>
+            <span class="typewriter-cursor">|</span>
+          </div>
+
+          <p class="hero-description">
+            Bridging <strong>mathematical rigor</strong> and <strong>production-grade AI</strong>. Specialized in building autonomous <strong>LangChain ReAct agents</strong>, high-throughput <strong>computer vision & document parsing pipelines</strong>, and enterprise-grade <strong>time-series predictive intelligence</strong>.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary">
+              <span>View Projects</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+            </a>
+            <a href="#agent-demo" class="btn btn-glow">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+              <span>Test Mintzy Agent</span>
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <span>Get in Touch</span>
+            </a>
+          </div>
+
+          <!-- Social Quick Links -->
+          <div class="hero-socials">
+            <a href="https://github.com/Harsh-Kumar-Mishra" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub Profile" title="GitHub">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+            </a>
+            <a href="https://linkedin.com/in/Harsh-Kumar-Mishra" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn Profile" title="LinkedIn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
+            <a href="mailto:mishraharsh008@gmail.com" class="social-icon" aria-label="Send Email" title="mishraharsh008@gmail.com">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            </a>
+            <span class="social-divider"></span>
+            <span class="location-tag">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              Surat, Gujarat, India
+            </span>
+          </div>
+        </div>
+
+        <!-- Hero Visual / Code Card Display -->
+        <div class="hero-visual">
+          <div class="terminal-card">
+            <div class="terminal-header">
+              <div class="terminal-dots">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <span class="terminal-title">harsh_agent_system.py</span>
+              <span class="terminal-badge">LIVE RUNTIME</span>
+            </div>
+            <div class="terminal-body">
+              <pre><code class="language-python"><span class="code-comment"># Production ReAct Agent Architecture</span>
+<span class="code-keyword">from</span> langchain.agents <span class="code-keyword">import</span> AgentExecutor, create_react_agent
+<span class="code-keyword">from</span> pydantic <span class="code-keyword">import</span> BaseModel, Field
+
+<span class="code-keyword">class</span> <span class="code-function">AIEngineer</span>:
+    name: str = <span class="code-string">"Harsh Kumar Mishra"</span>
+    education: str = <span class="code-string">"SVNIT Surat (Maths '27)"</span>
+    focus: list = [
+        <span class="code-string">"LangChain ReAct Workflows"</span>,
+        <span class="code-string">"Sub-500ms OCR & Computer Vision"</span>,
+        <span class="code-string">"Table-Aware Academic RAG"</span>,
+        <span class="code-string">"Time-Series & Risk Modeling"</span>
+    ]
+
+    <span class="code-keyword">def</span> <span class="code-function">build_solution</span>(self, problem):
+        <span class="code-keyword">return</span> AgentExecutor(
+            agent=create_react_agent(tools=[Search, Predict, Vision]),
+            memory=PineconeNamespaceMemory(isolation=<span class="code-keyword">True</span>),
+            latency_target=<span class="code-string">"&lt; 500ms"</span>
+        )</code></pre>
+            </div>
+            <div class="terminal-footer">
+              <div class="stat-pill"><span class="pill-dot"></span> LangChain 0.3+</div>
+              <div class="stat-pill">Pinecone VectorDB</div>
+              <div class="stat-pill">FastAPI & GCP</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Metrics Strip -->
+      <div class="container">
+        <div class="metrics-grid">
+          <div class="metric-card">
+            <div class="metric-number" data-target="100">0</div>
+            <span class="metric-plus">+</span>
+            <div class="metric-label">Daily Active Users on Mintzy Agent</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-number" data-target="500">0</div>
+            <span class="metric-unit">ms</span>
+            <div class="metric-label">Aadhaar OCR End-to-End Latency</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-number-float" data-target="0.85">0.00</div>
+            <div class="metric-label">RAG Retrieval Hit Rate (NDCG@5: 0.82)</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-number-str">Top 4%</div>
+            <div class="metric-label">Nationwide @ DoTSLASH 8.0 Hackathon</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-number-str">8.06 / 10</div>
+            <div class="metric-label">CGPA in Integrated M.Sc. Mathematics</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">About Me</span>
+          <h2 class="section-title">Applied Mathematics Meets Machine Learning</h2>
+          <p class="section-subtitle">
+            I blend theoretical mathematical foundations with practical, scalable software engineering to turn ambitious machine learning concepts into resilient production systems.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card highlight-card">
+            <div class="about-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path d="M2 12h20"></path></svg>
+            </div>
+            <h3>Autonomous Agents & LangChain Systems</h3>
+            <p>
+              I architect multi-step conversational reasoning loops using LangChain, ReAct frameworks, and structured Pydantic tools. From dynamic tool calling across live market data to isolated session management in Pinecone, I ensure agents remain reliable, bounded, and explainable.
+            </p>
+          </div>
+
+          <div class="about-card highlight-card">
+            <div class="about-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h20"></path><path d="M20 12l-4-4"></path><path d="M20 12l-4 4"></path><rect x="4" y="4" width="8" height="16" rx="2"></rect></svg>
+            </div>
+            <h3>Computer Vision & Document AI</h3>
+            <p>
+              Transforming chaotic real-world inputs—from low-res Aadhaar ID card scans to multi-column academic PDFs—into clean, structured JSON schemas. Expert in OpenCV geometric transformations, Canny de-skewing, color segmentation, and multi-engine OCR (PyTesseract, EasyOCR, PaddleOCR).
+            </p>
+          </div>
+
+          <div class="about-card highlight-card">
+            <div class="about-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+            </div>
+            <h3>Mathematical & Predictive Modeling</h3>
+            <p>
+              Trained in pure & applied mathematics at SVNIT Surat. I apply rigorous statistical concepts: time-series forecasting (ARIMAX, SARIMAX), gradient boosted ensembles (XGBoost), and explainable AI (SHAP) to deconstruct complex macro-economic and clinical healthcare datasets.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE SECTION -->
+    <section class="section experience-section" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Career History</span>
+          <h2 class="section-title">Industry Experience & Research</h2>
+          <p class="section-subtitle">
+            Real-world product engineering, high-throughput pipelines, and research-backed AI architectures.
+          </p>
+        </div>
+
+        <div class="timeline">
+          <!-- Experience Item 1: Gravity Research -->
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-card">
+              <div class="timeline-card-header">
+                <div>
+                  <h3 class="role-title">AI Engineer (Part-Time)</h3>
+                  <div class="company-name">Gravity Research Pvt. Ltd. <span class="badge-location">• Surat, Gujarat</span></div>
+                </div>
+                <div class="timeline-date">March 2025 – June 2025</div>
+              </div>
+
+              <div class="product-spotlight">
+                <span class="spotlight-badge">Core Product</span>
+                <strong>Mintzy: Autonomous Stock Market Co-pilot</strong>
+              </div>
+
+              <ul class="timeline-bullets">
+                <li>
+                  Engineered a production-ready <strong>LangChain ReAct agent</strong> architecture powering Mintzy, delivering conversational market intelligence and predictive insights to <strong>100+ active daily users</strong>.
+                </li>
+                <li>
+                  Constructed strict <strong>JSON-serializable Pydantic data models</strong> (`PredictAction`, `ClarifyAction`, `ConsultAction`, `FinishAction`) ensuring deterministic tool calling across live web queries, market forecasting engines, and sandboxed computations.
+                </li>
+                <li>
+                  Designed a session-aware multi-tenant context retrieval mechanism leveraging <strong>Pinecone vector database namespace isolation</strong> and metadata filtering per user session, drastically eliminating hallucination and cross-session contamination.
+                </li>
+              </ul>
+
+              <div class="tech-stack-pills">
+                <span class="tech-pill">LangChain</span>
+                <span class="tech-pill">ReAct Framework</span>
+                <span class="tech-pill">FastAPI</span>
+                <span class="tech-pill">Pinecone VectorDB</span>
+                <span class="tech-pill">Pydantic</span>
+                <span class="tech-pill">GCP</span>
+                <span class="tech-pill">Ollama</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Experience Item 2: Monday Labs -->
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-card">
+              <div class="timeline-card-header">
+                <div>
+                  <h3 class="role-title">Machine Learning Engineer Intern</h3>
+                  <div class="company-name">Monday Labs, LLC <span class="badge-location">• Remote</span></div>
+                </div>
+                <div class="timeline-date">September 2024 – November 2024</div>
+              </div>
+
+              <div class="products-dual">
+                <!-- Product 1: DocWizard -->
+                <div class="sub-product">
+                  <div class="sub-product-title">
+                    <span class="sub-tag">Product 1</span>
+                    <strong>DocWizard: Visual Document & Style Parser</strong>
+                  </div>
+                  <p>
+                    Engineered an automated visual document parsing pipeline capable of isolating and extracting stylized/colored text and background layout from documents. Achieved <strong>92% color segmentation accuracy</strong> validated across 10+ document types with 500+ Regions of Interest (ROIs).
+                  </p>
+                </div>
+
+                <!-- Product 2: AadharOCR -->
+                <div class="sub-product">
+                  <div class="sub-product-title">
+                    <span class="sub-tag">Product 2</span>
+                    <strong>AadhaarOCR: 4-Stage Identity Extraction Engine</strong>
+                  </div>
+                  <p>
+                    Built a modular 4-stage document extraction pipeline: Card Blob Isolation via Canny edge detection & 4-point perspective warping, visual noise/photo suppression, PyTesseract OCR, and regex-driven field segmentation. Cut latency to <strong>&lt;500ms</strong> by downscaling to a 600×400 geometry, reducing raw pixel volume by <strong>&gt;95%</strong> without degrading character legibility.
+                  </p>
+                </div>
+              </div>
+
+              <div class="tech-stack-pills">
+                <span class="tech-pill">OpenCV</span>
+                <span class="tech-pill">TensorFlow</span>
+                <span class="tech-pill">PyTesseract</span>
+                <span class="tech-pill">EasyOCR</span>
+                <span class="tech-pill">Perspective Warping</span>
+                <span class="tech-pill">Colorama</span>
+                <span class="tech-pill">Docker</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Experience Item 3: IIT Dhanbad -->
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-card">
+              <div class="timeline-card-header">
+                <div>
+                  <h3 class="role-title">Research Intern</h3>
+                  <div class="company-name">Indian Institute of Technology (ISM), Dhanbad <span class="badge-location">• Dhanbad, India</span></div>
+                </div>
+                <div class="timeline-date">April 2024 – July 2024</div>
+              </div>
+
+              <div class="product-spotlight">
+                <span class="spotlight-badge">Research Project</span>
+                <strong>Table-Aware Scientific Literature RAG Pipeline</strong>
+              </div>
+
+              <ul class="timeline-bullets">
+                <li>
+                  Prototyped a robust table-aware Retrieval-Augmented Generation (RAG) pipeline incorporating PaddleOCR and Poppler to accurately parse, preserve, and query complex nested tabular data in scientific publications.
+                </li>
+                <li>
+                  Orchestrated context-aware simultaneous retrieval across <strong>5+ concurrent research papers</strong> via hybrid semantic embeddings and fine-grained metadata filtering in ChromaDB.
+                </li>
+                <li>
+                  Conducted comprehensive IR evaluation across <strong>300+ ground-truth Q&A pairs</strong> spanning 30+ papers, achieving a notable <strong>Hit Rate of 0.85</strong> and <strong>NDCG@5 of 0.82</strong>.
+                </li>
+              </ul>
+
+              <div class="tech-stack-pills">
+                <span class="tech-pill">LangChain</span>
+                <span class="tech-pill">ChromaDB</span>
+                <span class="tech-pill">PaddleOCR</span>
+                <span class="tech-pill">Poppler</span>
+                <span class="tech-pill">BeautifulSoup</span>
+                <span class="tech-pill">Streamlit</span>
+                <span class="tech-pill">IR Evaluation</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Featured Work</span>
+          <h2 class="section-title">Industry & Applied ML Projects</h2>
+          <p class="section-subtitle">
+            Explore products, research prototypes, and data science models engineered for scale, precision, and business impact.
+          </p>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="project-filters">
+          <button class="filter-btn active" data-filter="all">All Projects (6)</button>
+          <button class="filter-btn" data-filter="agents">AI Agents & RAG (2)</button>
+          <button class="filter-btn" data-filter="cv">Computer Vision & OCR (2)</button>
+          <button class="filter-btn" data-filter="analytics">Predictive Modeling & Analytics (2)</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid" id="projects-grid">
+
+          <!-- PROJECT 1: Mintzy Agent -->
+          <div class="project-card" data-category="agents">
+            <div class="project-card-banner">
+              <span class="project-category-badge">AI Agent • LangChain</span>
+              <span class="project-status-pill">100+ Active Users</span>
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-title">Mintzy: Autonomous Market Intelligence Agent</h3>
+              <p class="project-tagline">
+                An intelligent financial assistant employing a multi-turn LangChain ReAct reasoning loop to deliver personalized stock predictions and structured analysis.
+              </p>
+
+              <div class="project-impact-box">
+                <div class="impact-item">
+                  <span class="impact-title">Problem</span>
+                  <span class="impact-desc">Retail investors face chaotic financial data and unstructured reports without customized risk alignment.</span>
+                </div>
+                <div class="impact-item">
+                  <span class="impact-title">Solution</span>
+                  <span class="impact-desc">Engineered a ReAct framework routing queries through structured Pydantic schemas, isolated Pinecone vector stores, and technical indicators.</span>
+                </div>
+              </div>
+
+              <div class="project-metrics-row">
+                <div class="metric-tag">
+                  <strong>100+</strong> DAU
+                </div>
+                <div class="metric-tag">
+                  <strong>Zero-Leak</strong> User Isolation
+                </div>
+                <div class="metric-tag">
+                  <strong>ReAct</strong> Loop
+                </div>
+              </div>
+
+              <div class="project-tags">
+                <span>LangChain</span>
+                <span>FastAPI</span>
+                <span>Pinecone</span>
+                <span>Pydantic</span>
+                <span>GCP</span>
+                <span>Ollama</span>
+              </div>
+
+              <div class="project-card-footer">
+                <button class="btn btn-outline btn-sm btn-open-modal" data-modal="modal-mintzy">
+                  <span>Architecture Deep Dive</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </button>
+                <a href="#agent-demo" class="btn btn-primary btn-sm">
+                  <span>Launch Demo</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 2: DocWizard -->
+          <div class="project-card" data-category="cv">
+            <div class="project-card-banner cv-banner">
+              <span class="project-category-badge">Computer Vision • OCR</span>
+              <span class="project-status-pill">92% Color Accuracy</span>
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-title">DocWizard: Visual Document & Style Parsing Engine</h3>
+              <p class="project-tagline">
+                Converts static, complex PDFs into feature-rich, interactive JSON objects by preserving textual color, styling, and geometric layout hierarchy.
+              </p>
+
+              <div class="project-impact-box">
+                <div class="impact-item">
+                  <span class="impact-title">Problem</span>
+                  <span class="impact-desc">Traditional OCR flattens documents into raw text, losing all color cues, styling, and structural hierarchy.</span>
+                </div>
+                <div class="impact-item">
+                  <span class="impact-title">Solution</span>
+                  <span class="impact-desc">Implemented OpenCV-based background & text color detectors alongside PyTesseract and EasyOCR with containerized microservices.</span>
+                </div>
+              </div>
+
+              <div class="project-metrics-row">
+                <div class="metric-tag">
+                  <strong>92%</strong> Segmentation Acc.
+                </div>
+                <div class="metric-tag">
+                  <strong>500+</strong> Tested ROIs
+                </div>
+                <div class="metric-tag">
+                  <strong>FastAPI</strong> Microservice
+                </div>
+              </div>
+
+              <div class="project-tags">
+                <span>OpenCV</span>
+                <span>PyTesseract</span>
+                <span>EasyOCR</span>
+                <span>FastAPI</span>
+                <span>Docker</span>
+                <span>Pydantic</span>
+              </div>
+
+              <div class="project-card-footer">
+                <button class="btn btn-outline btn-sm btn-open-modal" data-modal="modal-docwizard">
+                  <span>Architecture Deep Dive</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 3: AadhaarOCR -->
+          <div class="project-card" data-category="cv">
+            <div class="project-card-banner cv-banner">
+              <span class="project-category-badge">Computer Vision • Edge Pipeline</span>
+              <span class="project-status-pill">&lt;500ms Latency</span>
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-title">AadhaarOCR: High-Velocity Identity Extraction</h3>
+              <p class="project-tagline">
+                An ultra-fast 4-stage computer vision pipeline isolating, de-skewing, and extracting personal identity attributes from unstructured mobile card scans.
+              </p>
+
+              <div class="project-impact-box">
+                <div class="impact-item">
+                  <span class="impact-title">Problem</span>
+                  <span class="impact-desc">Mobile photos of ID cards suffer from perspective distortion, glare, shadows, and high latency on high-res camera captures.</span>
+                </div>
+                <div class="impact-item">
+                  <span class="impact-title">Solution</span>
+                  <span class="impact-desc">Engineered Canny boundary isolation + 4-point perspective warp, downsampling to 600×400 to slash pixel load by 95% while keeping legibility.</span>
+                </div>
+              </div>
+
+              <div class="project-metrics-row">
+                <div class="metric-tag">
+                  <strong>&lt;500ms</strong> Total Latency
+                </div>
+                <div class="metric-tag">
+                  <strong>&gt;95%</strong> Pixel Reduction
+                </div>
+                <div class="metric-tag">
+                  <strong>4-Stage</strong> CV Architecture
+                </div>
+              </div>
+
+              <div class="project-tags">
+                <span>OpenCV</span>
+                <span>Perspective Warp</span>
+                <span>PyTesseract</span>
+                <span>Python</span>
+                <span>Regex</span>
+              </div>
+
+              <div class="project-card-footer">
+                <button class="btn btn-outline btn-sm btn-open-modal" data-modal="modal-aadhar">
+                  <span>Architecture Deep Dive</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 4: Table-Aware Research RAG -->
+          <div class="project-card" data-category="agents">
+            <div class="project-card-banner rag-banner">
+              <span class="project-category-badge">Research RAG • Multi-Doc</span>
+              <span class="project-status-pill">Hit Rate: 0.85</span>
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-title">Table-Aware Scientific Literature RAG Pipeline</h3>
+              <p class="project-tagline">
+                Preserves complex multi-column tabular semantics in scientific literature to enable accurate multi-document question answering across research corpuses.
+              </p>
+
+              <div class="project-impact-box">
+                <div class="impact-item">
+                  <span class="impact-title">Problem</span>
+                  <span class="impact-desc">Standard naive chunking destroys tables in academic papers, producing gibberish and missing key experimental findings.</span>
+                </div>
+                <div class="impact-item">
+                  <span class="impact-title">Solution</span>
+                  <span class="impact-desc">Integrated PaddleOCR with Poppler to isolate tables, enrich metadata, and index into ChromaDB with multi-document cross-referencing.</span>
+                </div>
+              </div>
+
+              <div class="project-metrics-row">
+                <div class="metric-tag">
+                  <strong>0.85</strong> Hit Rate
+                </div>
+                <div class="metric-tag">
+                  <strong>0.82</strong> NDCG@5
+                </div>
+                <div class="metric-tag">
+                  <strong>300+</strong> Benchmark Tests
+                </div>
+              </div>
+
+              <div class="project-tags">
+                <span>LangChain</span>
+                <span>PaddleOCR</span>
+                <span>ChromaDB</span>
+                <span>Streamlit</span>
+                <span>Information Retrieval</span>
+              </div>
+
+              <div class="project-card-footer">
+                <button class="btn btn-outline btn-sm btn-open-modal" data-modal="modal-rag">
+                  <span>Architecture Deep Dive</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 5: Disaster Modeling -->
+          <div class="project-card" data-category="analytics">
+            <div class="project-card-banner analytics-banner">
+              <span class="project-category-badge">Time Series • Climate Risk</span>
+              <span class="project-status-pill">R² = 0.828 Ensembles</span>
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-title">115-Year Climate Disaster Economic Loss Modeling</h3>
+              <p class="project-tagline">
+                Macro-economic risk forecasting harmonizing over a century of Berkeley Earth global temperature anomalies with EM-DAT catastrophe records.
+              </p>
+
+              <div class="project-impact-box">
+                <div class="impact-item">
+                  <span class="impact-title">Problem</span>
+                  <span class="impact-desc">Extreme disaster shocks create severe non-linear spikes that conventional linear models fail to anticipate.</span>
+                </div>
+                <div class="impact-item">
+                  <span class="impact-title">Solution</span>
+                  <span class="impact-desc">Formulated ARIMAX/SARIMAX models with exogenous climate regressors, coupled with XGBoost ensembles and SHAP explainability.</span>
+                </div>
+              </div>
+
+              <div class="project-metrics-row">
+                <div class="metric-tag">
+                  <strong>-26%</strong> RMSE vs Naive
+                </div>
+                <div class="metric-tag">
+                  <strong>60-75%</strong> Directional Acc.
+                </div>
+                <div class="metric-tag">
+                  <strong>115+</strong> Years of Data
+                </div>
+              </div>
+
+              <div class="project-tags">
+                <span>ARIMAX / SARIMAX</span>
+                <span>XGBoost</span>
+                <span>SHAP (XAI)</span>
+                <span>Pandas</span>
+                <span>Scikit-Learn</span>
+              </div>
+
+              <div class="project-card-footer">
+                <button class="btn btn-outline btn-sm btn-open-modal" data-modal="modal-disaster">
+                  <span>Architecture Deep Dive</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 6: MIMIC-III ICU EDA -->
+          <div class="project-card" data-category="analytics">
+            <div class="project-card-banner analytics-banner">
+              <span class="project-category-badge">Healthcare • Clinical Analytics</span>
+              <span class="project-status-pill">1,170+ Patient Records</span>
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-title">MIMIC-III Critical Care Clinical Data Analytics</h3>
+              <p class="project-tagline">
+                Exploratory data analysis and comorbidity correlation mapping across 51 clinical indicators to uncover intensive care mortality determinants.
+              </p>
+
+              <div class="project-impact-box">
+                <div class="impact-item">
+                  <span class="impact-title">Problem</span>
+                  <span class="impact-desc">ICU patient datasets have missing entries, extreme outliers, and highly interdependent clinical comorbidities.</span>
+                </div>
+                <div class="impact-item">
+                  <span class="impact-title">Solution</span>
+                  <span class="impact-desc">Employed median imputation, statistical distributions, and Seaborn multi-variable heatmaps across 9 critical medical conditions.</span>
+                </div>
+              </div>
+
+              <div class="project-metrics-row">
+                <div class="metric-tag">
+                  <strong>13.5%</strong> ICU Mortality Analyzed
+                </div>
+                <div class="metric-tag">
+                  <strong>51</strong> Clinical Features
+                </div>
+                <div class="metric-tag">
+                  <strong>9</strong> Comorbidities
+                </div>
+              </div>
+
+              <div class="project-tags">
+                <span>Python</span>
+                <span>Pandas</span>
+                <span>Seaborn</span>
+                <span>Statistical Modeling</span>
+                <span>MIMIC-III</span>
+              </div>
+
+              <div class="project-card-footer">
+                <button class="btn btn-outline btn-sm btn-open-modal" data-modal="modal-mimic">
+                  <span>Architecture Deep Dive</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE MINTZY AGENT PLAYGROUND -->
+    <section class="section demo-section" id="agent-demo">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Interactive Simulation</span>
+          <h2 class="section-title">Live Mintzy Agent Playground</h2>
+          <p class="section-subtitle">
+            Experience the <strong>LangChain ReAct Agent</strong> reasoning cycle in real time. Click a query below to watch the step-by-step <code>Thought &rarr; Action &rarr; Observation &rarr; Final Answer</code> execution.
+          </p>
+        </div>
+
+        <div class="agent-playground-container">
+          <!-- Quick Prompt Triggers -->
+          <div class="prompt-triggers">
+            <span class="trigger-label">Try a prompt:</span>
+            <button class="agent-query-pill" data-query="stocks">
+              "Suggest 2 banking stocks with Balanced risk for the next 10 days"
+            </button>
+            <button class="agent-query-pill" data-query="table">
+              "Extract Q3 financial performance table from uploaded earnings report"
+            </button>
+            <button class="agent-query-pill" data-query="risk">
+              "Evaluate risk profile for high-volatility tech assets"
+            </button>
+          </div>
+
+          <!-- Interactive Terminal Window -->
+          <div class="interactive-terminal">
+            <div class="terminal-bar">
+              <div class="terminal-actions">
+                <span class="term-btn red"></span>
+                <span class="term-btn yellow"></span>
+                <span class="term-btn green"></span>
+              </div>
+              <div class="term-title">LangChain ReAct Agent Console • Mintzy v1.2</div>
+              <button class="term-clear-btn" id="agent-clear-btn" title="Reset Console">Reset</button>
+            </div>
+
+            <!-- Agent Execution Stream -->
+            <div class="terminal-logs" id="terminal-logs">
+              <div class="log-entry system-msg">
+                <span class="log-prefix">[AGENT INITIALIZED]</span> LangChain ReAct agent loaded with tools: <code>[WebSearch, PredictEngine, VectorRetriever, TableParser]</code>. Memory bound to Pinecone namespace <code>user_session_49f8</code>.
+              </div>
+              <div class="log-entry prompt-hint">
+                &gt; Select an example prompt above or type in the input below to test the agent loop...
+              </div>
+            </div>
+
+            <!-- Terminal Input -->
+            <form class="terminal-input-bar" id="terminal-form">
+              <span class="term-chevron">&gt;</span>
+              <input type="text" id="terminal-input" placeholder="Ask Mintzy a stock market or portfolio question..." autocomplete="off" />
+              <button type="submit" class="btn btn-primary btn-sm btn-send" id="terminal-send-btn">
+                <span>Run Agent</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS MATRIX SECTION -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Competencies</span>
+          <h2 class="section-title">Technical Skills & Tooling</h2>
+          <p class="section-subtitle">
+            A comprehensive overview of my technical stack across artificial intelligence, computer vision, mathematical modeling, and production engineering.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Skill Category 1 -->
+          <div class="skill-group-card">
+            <div class="skill-group-header">
+              <div class="skill-cat-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a8 8 0 0 0-8 8c0 3.3 2 6 5 7.4V20a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-2.6c3-1.4 5-4.1 5-7.4a8 8 0 0 0-8-8z"></path><line x1="10" y1="22" x2="14" y2="22"></line></svg>
+              </div>
+              <h3>AI Agents & LLM Frameworks</h3>
+            </div>
+            <ul class="skill-items">
+              <li><span class="skill-name">LangChain (Core & Community)</span><span class="skill-level">Advanced</span></li>
+              <li><span class="skill-name">ReAct Framework & Tool Calling</span><span class="skill-level">Advanced</span></li>
+              <li><span class="skill-name">RAG (Retrieval-Augmented Generation)</span><span class="skill-level">Advanced</span></li>
+              <li><span class="skill-name">Vector Databases (Pinecone, ChromaDB)</span><span class="skill-level">Proficient</span></li>
+              <li><span class="skill-name">Pydantic Schema Validation</span><span class="skill-level">Advanced</span></li>
+              <li><span class="skill-name">Ollama & HuggingFace Models</span><span class="skill-level">Proficient</span></li>
+            </ul>
+          </div>
+
+          <!-- Skill Category 2 -->
+          <div class="skill-group-card">
+            <div class="skill-group-header">
+              <div class="skill-cat-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+              </div>
+              <h3>Computer Vision & Document AI</h3>
+            </div>
+            <ul class="skill-items">
+              <li><span class="skill-name">OpenCV (Image Processing)</span><span class="skill-level">Advanced</span></li>
+              <li><span class="skill-name">PyTesseract & EasyOCR</span><span class="skill-level">Advanced</span></li>
+              <li><span class="skill-name">PaddleOCR & Table Extraction</span><span class="skill-level">Proficient</span></li>
+              <li><span class="skill-name">Perspective Warping & De-skewing</span><span class="skill-level">Advanced</span></li>
+              <li><span class="skill-name">Color Segmentation & ROI Filtering</span><span class="skill-level">Advanced</span></li>
+              <li><span class="skill-name">Poppler & PyMuPDF</span><span class="skill-level">Proficient</span></li>
+            </ul>
+          </div>
+
+          <!-- Skill Category 3 -->
+          <div class="skill-group-card">
+            <div class="skill-group-header">
+              <div class="skill-cat-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+              </div>
+              <h3>Machine Learning & Forecasting</h3>
+            </div>
+            <ul class="skill-items">
+              <li><span class="skill-name">Time Series (ARIMAX, SARIMAX)</span><span class="skill-level">Advanced</span></li>
+              <li><span class="skill-name">XGBoost & Random Forest Ensembles</span><span class="skill-level">Advanced</span></li>
+              <li><span class="skill-name">Explainable AI (SHAP)</span><span class="skill-level">Proficient</span></li>
+              <li><span class="skill-name">Scikit-Learn & TensorFlow</span><span class="skill-level">Proficient</span></li>
+              <li><span class="skill-name">Information Retrieval (Hit Rate, NDCG)</span><span class="skill-level">Advanced</span></li>
+              <li><span class="skill-name">Rolling Origin Validation</span><span class="skill-level">Advanced</span></li>
+            </ul>
+          </div>
+
+          <!-- Skill Category 4 -->
+          <div class="skill-group-card">
+            <div class="skill-group-header">
+              <div class="skill-cat-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+              </div>
+              <h3>Languages & Engineering</h3>
+            </div>
+            <ul class="skill-items">
+              <li><span class="skill-name">Python (OOP, Concurrency, Pydantic)</span><span class="skill-level">Advanced</span></li>
+              <li><span class="skill-name">C / C++ (Algorithms & Math)</span><span class="skill-level">Proficient</span></li>
+              <li><span class="skill-name">SQL & Data Warehousing</span><span class="skill-level">Proficient</span></li>
+              <li><span class="skill-name">FastAPI & RESTful API Design</span><span class="skill-level">Advanced</span></li>
+              <li><span class="skill-name">Docker & Containerization</span><span class="skill-level">Proficient</span></li>
+              <li><span class="skill-name">GCP & Git / GitHub CI/CD</span><span class="skill-level">Proficient</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION & HONORS SECTION -->
+    <section class="section edu-section" id="education">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Academic Background</span>
+          <h2 class="section-title">Education & Honors</h2>
+          <p class="section-subtitle">
+            Rigorous mathematical foundation from a premier National Institute of Technology (NIT).
+          </p>
+        </div>
+
+        <div class="edu-grid">
+          <!-- Education Card -->
+          <div class="edu-card">
+            <div class="edu-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+            </div>
+            <div class="edu-details">
+              <span class="edu-period">2022 – 2027</span>
+              <h3>Integrated Master's Degree, Mathematics</h3>
+              <h4>Sardar Vallabhbhai National Institute of Technology (SVNIT), Surat</h4>
+              <div class="grade-badge">CGPA: 8.06 / 10</div>
+              <p class="edu-coursework">
+                <strong>Relevant Coursework:</strong> Probability and Statistics, Linear Algebra, Multivariable Calculus, Data Structures & Algorithms, Data Science and Machine Learning, Numerical Methods.
+              </p>
+            </div>
+          </div>
+
+          <!-- Honors & Awards Card -->
+          <div class="edu-card honor-card">
+            <div class="edu-icon gold-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+            </div>
+            <div class="edu-details">
+              <span class="edu-period">February 2025</span>
+              <h3>DoTSLASH 8.0 | National Hackathon</h3>
+              <h4>SVNIT Surat</h4>
+              <div class="grade-badge hackathon-badge">Top 4% Nationwide</div>
+              <p class="edu-coursework">
+                Ranked in the <strong>Top 4% nationwide</strong> among hundreds of competitive developer teams for designing and engineering an autonomous, AI-driven stock market co-pilot with real-time financial reasoning.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="contact-box">
+          <div class="contact-info">
+            <span class="section-tag">Let's Connect</span>
+            <h2 class="contact-title">Interested in building something extraordinary?</h2>
+            <p class="contact-text">
+              I am actively looking for full-time / internship opportunities in <strong>AI Engineering</strong>, <strong>Machine Learning</strong>, <strong>LLM Agent Architecture</strong>, and <strong>Applied Data Science</strong>.
+            </p>
+
+            <div class="contact-details-list">
+              <div class="contact-detail-item">
+                <div class="contact-icon-wrapper">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                </div>
+                <div>
+                  <span class="contact-label">Email Me</span>
+                  <div class="copy-email-row">
+                    <a href="mailto:mishraharsh008@gmail.com" class="contact-val">mishraharsh008@gmail.com</a>
+                    <button id="copy-email-btn" class="copy-btn" title="Copy Email">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                      <span class="copy-tooltip">Copy</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="contact-detail-item">
+                <div class="contact-icon-wrapper">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                </div>
+                <div>
+                  <span class="contact-label">Phone</span>
+                  <a href="tel:+918160230698" class="contact-val">+91 8160230698</a>
+                </div>
+              </div>
+
+              <div class="contact-detail-item">
+                <div class="contact-icon-wrapper">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                </div>
+                <div>
+                  <span class="contact-label">Location</span>
+                  <span class="contact-val">Surat, Gujarat, India (Open to Relocation / Remote)</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-social-links">
+              <a href="https://github.com/Harsh-Kumar-Mishra" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                <span>GitHub</span>
+              </a>
+              <a href="https://linkedin.com/in/Harsh-Kumar-Mishra" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                <span>LinkedIn</span>
+              </a>
+              <a href="assets/Harsh_Kumar_Mishra_Resume.pdf" target="_blank" download="Harsh_Kumar_Mishra_Resume.pdf" class="btn btn-primary btn-sm">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                <span>Download Resume</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form-wrapper">
+            <form id="contact-form" class="contact-form">
+              <h3 class="form-title">Send a Direct Message</h3>
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required placeholder="e.g. Alex Mercer" />
+              </div>
+              <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" required placeholder="alex@company.com" />
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" required placeholder="AI Engineering Opportunity / Collaboration" />
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" required placeholder="Hi Harsh, I reviewed your Mintzy agent and CV work and would love to chat..."></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block">
+                <span>Send Message</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+              </button>
+              <div class="form-feedback" id="form-feedback"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-left">
+        <span class="logo-box small">HKM</span>
+        <p>&copy; 2026 Harsh Kumar Mishra. Built for GitHub Pages with HTML5, CSS3 & Modern JavaScript.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#hero">Back to Top &uarr;</a>
+        <a href="https://github.com/Harsh-Kumar-Mishra" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://linkedin.com/in/Harsh-Kumar-Mishra" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="mailto:mishraharsh008@gmail.com">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MODALS CONTAINER FOR DEEP-DIVE ARCHITECTURES -->
+  <div class="modal-backdrop" id="modal-backdrop"></div>
+
+  <!-- MODAL 1: MINTZY -->
+  <div class="project-modal" id="modal-mintzy" role="dialog" aria-modal="true" aria-labelledby="modal-mintzy-title">
+    <button class="modal-close-btn" aria-label="Close Modal">&times;</button>
+    <div class="modal-header">
+      <span class="project-category-badge">Agentic Systems • Production</span>
+      <h2 id="modal-mintzy-title">Mintzy: Autonomous Stock Market Co-pilot</h2>
+      <div class="modal-meta">
+        <span>Organization: Gravity Research Pvt. Ltd.</span>
+        <span>Tech: LangChain ReAct, FastAPI, Pinecone, Pydantic, Ollama</span>
+      </div>
+    </div>
+    <div class="modal-body">
+      <h3>The Industry Challenge</h3>
+      <p>
+        Financial retail traders often drown in disparate data—news feeds, earnings statements, and technical indicators. Existing chatbots produce generic hallucinations because they lack bounded tool execution, risk profile enforcement, and session-isolated memory.
+      </p>
+
+      <h3>System Architecture & LangChain ReAct Engine</h3>
+      <p>
+        Harsh designed and deployed a multi-stage <strong>LangChain ReAct Agent</strong> workflow that operates on deterministic thought-action cycles. Instead of raw text output, every turn is mediated by Pydantic models:
+      </p>
+      <ul>
+        <li><strong>ClarifyAction:</strong> If user risk parameters (e.g., <em>HighRisk/HighReward</em>, <em>Balanced</em>, <em>LowRisk/FairReturn</em>) are absent, the agent holds execution to request specific user inputs.</li>
+        <li><strong>PredictAction:</strong> Invokes proprietary time-series models (RSI, Bollinger Bands, Ichimoku clouds, Comprehensive Risk-Return Ratio) over target ticker baskets.</li>
+        <li><strong>ConsultAction:</strong> Triggers web search across real-time financial market sources.</li>
+        <li><strong>FinishAction:</strong> Synthesizes analytical findings into clear, actionable investor briefings.</li>
+      </ul>
+
+      <h3>Vector Storage & Privacy Isolation</h3>
+      <p>
+        Document uploads (quarterly PDF reports, corporate filings) are chunked via LangChain document splitters and indexed into <strong>Pinecone VectorDB</strong>. To ensure complete tenant data segregation across 100+ active users, queries are strictly partitioned using dynamic <code>user_id</code> namespaces and <code>session_id</code> metadata filters.
+      </p>
+
+      <h3>Measurable Outcomes</h3>
+      <div class="modal-metrics-grid">
+        <div class="modal-stat">
+          <span class="stat-val">100+</span>
+          <span class="stat-name">Daily Active Users</span>
+        </div>
+        <div class="modal-stat">
+          <span class="stat-val">Top 4%</span>
+          <span class="stat-name">DoTSLASH Hackathon Rank</span>
+        </div>
+        <div class="modal-stat">
+          <span class="stat-val">100%</span>
+          <span class="stat-name">Strict Schema Compliance</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL 2: DOCWIZARD -->
+  <div class="project-modal" id="modal-docwizard" role="dialog" aria-modal="true" aria-labelledby="modal-docwizard-title">
+    <button class="modal-close-btn" aria-label="Close Modal">&times;</button>
+    <div class="modal-header">
+      <span class="project-category-badge">Computer Vision • Document AI</span>
+      <h2 id="modal-docwizard-title">DocWizard: Visual Document & Style Parsing</h2>
+      <div class="modal-meta">
+        <span>Company: Monday Labs, LLC</span>
+        <span>Tech: OpenCV, PyTesseract, EasyOCR, PyMuPDF, FastAPI, Docker</span>
+      </div>
+    </div>
+    <div class="modal-body">
+      <h3>The Industry Challenge</h3>
+      <p>
+        Converting PDFs into raw text discards critical stylistic signals: colored warning notices, highlighted headers, and layout relationships. Without visual styling information, downstream LLM reasoning loses contextual hierarchy.
+      </p>
+
+      <h3>Engineered Solution</h3>
+      <p>
+        DocWizard transforms arbitrary documents into rich, interactive JSON objects preserving text color, background hue, and layout coordinates:
+      </p>
+      <ul>
+        <li><strong>Hybrid Provider Architecture:</strong> Uses PyMuPDF for native vector PDFs and seamlessly falls back to PyTesseract / EasyOCR for scanned document inputs.</li>
+        <li><strong>Color Segmentation Pipeline:</strong> Developed custom OpenCV algorithms in HSV and RGB color spaces to detect text and background colors with high fidelity.</li>
+        <li><strong>Colorama Terminal Debugging:</strong> Created a real-time console visualizer streaming extracted text in its exact scanned color palette.</li>
+      </ul>
+
+      <h3>Key Results</h3>
+      <div class="modal-metrics-grid">
+        <div class="modal-stat">
+          <span class="stat-val">92%</span>
+          <span class="stat-name">Color Segmentation Accuracy</span>
+        </div>
+        <div class="modal-stat">
+          <span class="stat-val">500+</span>
+          <span class="stat-name">Evaluated Regions of Interest</span>
+        </div>
+        <div class="modal-stat">
+          <span class="stat-val">FastAPI</span>
+          <span class="stat-name">Dockerized Production Service</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL 3: AADHAAR OCR -->
+  <div class="project-modal" id="modal-aadhar" role="dialog" aria-modal="true" aria-labelledby="modal-aadhar-title">
+    <button class="modal-close-btn" aria-label="Close Modal">&times;</button>
+    <div class="modal-header">
+      <span class="project-category-badge">Computer Vision • High-Throughput Edge</span>
+      <h2 id="modal-aadhar-title">AadhaarOCR: 4-Stage Sub-500ms Extraction</h2>
+      <div class="modal-meta">
+        <span>Company: Monday Labs, LLC</span>
+        <span>Tech: OpenCV, Perspective Warping, PyTesseract, Python</span>
+      </div>
+    </div>
+    <div class="modal-body">
+      <h3>The Industry Challenge</h3>
+      <p>
+        Identity verification systems on mobile devices frequently encounter tilted, blurred, or high-resolution photos (12MP+). Feeding multi-megabyte raw photos directly into OCR causes sluggish latency (&gt;5s) and frequent false reads due to surrounding background clutter.
+      </p>
+
+      <h3>The 4-Stage Pipeline</h3>
+      <ol>
+        <li><strong>Card Blob Detection & Isolation:</strong> Employs Canny edge contours and convex hull heuristics to detect the 4 card vertices, then applies an OpenCV <code>getPerspectiveTransform</code> / <code>warpPerspective</code> to flatten the card into an orthogonal view.</li>
+        <li><strong>Geometric Standardization:</strong> Downsamples the perspective-corrected card to a fixed 600×400 geometry. This reduces raw pixel count by over <strong>95%</strong> while preserving crisp character edges.</li>
+        <li><strong>Noise & Non-Text Suppression:</strong> Automatically masks out the cardholder's photograph, holographic QR codes, Government emblems, and header banners.</li>
+        <li><strong>Information Segmentation:</strong> Executes PyTesseract on isolated ROIs and applies regex layout parsing to extract <strong>Name</strong>, <strong>DOB</strong>, <strong>Gender</strong>, and <strong>UID (12-digit Aadhaar Number)</strong> across both legacy and modern card revisions.</li>
+      </ol>
+
+      <h3>Performance Benchmarks</h3>
+      <div class="modal-metrics-grid">
+        <div class="modal-stat">
+          <span class="stat-val">&lt;500ms</span>
+          <span class="stat-name">End-to-End Processing Time</span>
+        </div>
+        <div class="modal-stat">
+          <span class="stat-val">&gt;95%</span>
+          <span class="stat-name">Pixel Volume Slashed</span>
+        </div>
+        <div class="modal-stat">
+          <span class="stat-val">100%</span>
+          <span class="stat-name">Field Extraction Reliability</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL 4: RAG PIPELINE -->
+  <div class="project-modal" id="modal-rag" role="dialog" aria-modal="true" aria-labelledby="modal-rag-title">
+    <button class="modal-close-btn" aria-label="Close Modal">&times;</button>
+    <div class="modal-header">
+      <span class="project-category-badge">Research RAG • Multimodal</span>
+      <h2 id="modal-rag-title">Table-Aware Scientific Literature RAG Pipeline</h2>
+      <div class="modal-meta">
+        <span>Institution: Indian Institute of Technology (ISM), Dhanbad</span>
+        <span>Tech: LangChain, PaddleOCR, ChromaDB, Poppler, Streamlit</span>
+      </div>
+    </div>
+    <div class="modal-body">
+      <h3>The Academic & Industry Problem</h3>
+      <p>
+        Academic papers convey their most crucial empirical findings in complex, multi-row tables. Standard text splitters slice through tabular rows blindly, resulting in scrambled context and failure to answer quantitative questions.
+      </p>
+
+      <h3>The Engineered Solution</h3>
+      <ul>
+        <li><strong>Table Extraction Module:</strong> Deployed PaddleOCR in conjunction with Poppler PDF rendering to segment table bounding boxes, convert tabular data into markdown/HTML matrices, and preserve column-row relationships.</li>
+        <li><strong>Context-Aware Multi-Document Retrieval:</strong> Indexed chunks into ChromaDB with comprehensive metadata tags (author, year, paper section, table flag), enabling simultaneous question answering across 5+ concurrent papers.</li>
+        <li><strong>Rigorous IR Benchmarking:</strong> Built automated evaluation harnesses checking Hit Rate and Normalized Discounted Cumulative Gain (NDCG).</li>
+      </ul>
+
+      <h3>Validated Metrics</h3>
+      <div class="modal-metrics-grid">
+        <div class="modal-stat">
+          <span class="stat-val">0.85</span>
+          <span class="stat-name">Hit Rate</span>
+        </div>
+        <div class="modal-stat">
+          <span class="stat-val">0.82</span>
+          <span class="stat-name">NDCG@5 Score</span>
+        </div>
+        <div class="modal-stat">
+          <span class="stat-val">300+</span>
+          <span class="stat-name">Questions Tested Across 30+ Papers</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL 5: DISASTER MODELING -->
+  <div class="project-modal" id="modal-disaster" role="dialog" aria-modal="true" aria-labelledby="modal-disaster-title">
+    <button class="modal-close-btn" aria-label="Close Modal">&times;</button>
+    <div class="modal-header">
+      <span class="project-category-badge">Time Series • Macro Risk</span>
+      <h2 id="modal-disaster-title">115-Year Climate Disaster Economic Loss Modeling</h2>
+      <div class="modal-meta">
+        <span>Focus: Statistical Modeling & Econometrics</span>
+        <span>Tech: ARIMAX, SARIMAX, XGBoost, SHAP, Scikit-Learn, Pandas</span>
+      </div>
+    </div>
+    <div class="modal-body">
+      <h3>Project Scope</h3>
+      <p>
+        Harmonized 115+ years of climate data (Berkeley Earth global temperature anomalies) with catastrophe records from the International Disaster Database (EM-DAT) to project economic losses from severe weather events.
+      </p>
+
+      <h3>Statistical & ML Methodology</h3>
+      <ul>
+        <li><strong>Exogenous Time Series:</strong> Developed ARIMAX and SARIMAX formulations with climate anomaly regressors, reducing RMSE by 26% compared to baseline persistence models.</li>
+        <li><strong>Ensemble Models & Explainability:</strong> Trained Random Forest and XGBoost ensembles achieving an R² of 0.828. Applied SHAP (SHapley Additive exPlanations) values to identify the primary drivers of extreme losses.</li>
+        <li><strong>Leak-Free Rolling Forecast Origin:</strong> Evaluated models across historical disaster shocks, demonstrating 60%–75% directional accuracy and cutting post-shock forecast error by over 70%.</li>
+      </ul>
+
+      <h3>Validated Outcomes</h3>
+      <div class="modal-metrics-grid">
+        <div class="modal-stat">
+          <span class="stat-val">0.828</span>
+          <span class="stat-name">R² Score on Ensembles</span>
+        </div>
+        <div class="modal-stat">
+          <span class="stat-val">-26%</span>
+          <span class="stat-name">RMSE vs Persistence</span>
+        </div>
+        <div class="modal-stat">
+          <span class="stat-val">&gt;70%</span>
+          <span class="stat-name">Post-Shock Error Reduction</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL 6: MIMIC-III -->
+  <div class="project-modal" id="modal-mimic" role="dialog" aria-modal="true" aria-labelledby="modal-mimic-title">
+    <button class="modal-close-btn" aria-label="Close Modal">&times;</button>
+    <div class="modal-header">
+      <span class="project-category-badge">Clinical Data Science</span>
+      <h2 id="modal-mimic-title">MIMIC-III Critical Care Clinical Data Analytics</h2>
+      <div class="modal-meta">
+        <span>Focus: Clinical Comorbidity Analytics</span>
+        <span>Tech: Python, Pandas, Seaborn, Matplotlib, Statistical Imputation</span>
+      </div>
+    </div>
+    <div class="modal-body">
+      <h3>Clinical Objective</h3>
+      <p>
+        Analyzed clinical records from Beth Israel Deaconess Medical Center (MIMIC-III database) to identify demographic risk factors, comorbidity patterns, and early clinical biomarkers correlated with ICU mortality.
+      </p>
+
+      <h3>Data Pipeline & Analytics</h3>
+      <ul>
+        <li><strong>Robust Preprocessing:</strong> Cleaned 1,170+ patient encounters with 51 physiological and clinical features. Applied median imputation for missing data values to preserve outlier resistance.</li>
+        <li><strong>Comorbidity Mapping:</strong> Produced correlation heatmaps across 9 critical comorbidities, uncovering that concurrent renal failure and cardiac arrest drastically multiply mortality likelihood.</li>
+        <li><strong>Insights Extracted:</strong> Quantified the baseline ICU mortality rate (13.5%) and isolated high-vulnerability age cohorts.</li>
+      </ul>
+
+      <h3>Key Findings</h3>
+      <div class="modal-metrics-grid">
+        <div class="modal-stat">
+          <span class="stat-val">1,170+</span>
+          <span class="stat-name">ICU Patient Records Processed</span>
+        </div>
+        <div class="modal-stat">
+          <span class="stat-val">51</span>
+          <span class="stat-name">Clinical Features Studied</span>
+        </div>
+        <div class="modal-stat">
+          <span class="stat-val">13.5%</span>
+          <span class="stat-name">Mortality Baseline Identified</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast">Copied to clipboard!</div>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
